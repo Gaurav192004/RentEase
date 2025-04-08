@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rent Now - RentEase</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Styling -->
+  <style>
+    body {
+      /* font-family: 'Arial', sans-serif; */
+      background-color: #fff;
+      color: #333;
+      padding-top: 56px; /* Adding padding to avoid content being hidden under the fixed navbar */
+    }
+
+    .navbar {
+      background-color: #000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    /* .navbar a.navbar-brand {
+      font-weight: bold;
+      font-size: 24px;
+      color: white;
+    } */
+
+    /* .navbar-nav .nav-link {
+      color: white;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ccc;
+    } */
+
+    /* Footer */
+    .footer {
+      color: white;
+      padding: 12px 0;
+      text-align: center;
+      margin-top: 26px;
+    }
+
+    /* Product Cards */
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    .product-card img {
+      width: 60%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-card h5 {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .product-card p {
+      font-size: 16px;
+      color: #777;
+    }
+
+    .product-card .btn-rent {
+      background-color: #000;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      margin-top: 15px;
+      transition: background-color 0.3s;
+    }
+
+    .product-card .btn-rent:hover {
+      background-color: #333;
+    }
+
+    /* Grid Layout */
+    .product-grid {
+      margin-top: 30px;
+    }
+
+    #dhoti{
+    width: 39%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="rent.html">RentEase</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="rent.html">Rent Now</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Rent Now Section -->
+  <div class="container product-grid">
+    <h2 class="text-center">Available Items for Rent</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Product 1 -->
+      <div class="col">
+        <div class="product-card">
+          <img src="turban1.jpg" alt="Turban">
+          <h5>Traditional Punjabi Turban</h5>
+          <p>₹200/day</p>
+          <a href="javascript:void(0)" class="btn-rent">Rent Now</a>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="col">
+        <div class="product-card">
+          <img src="duppatta1.jpg" alt="Dupatta">
+          <h5>Elegant Dupatta</h5>
+          <p>₹50/day</p>
+          <a href="javascript:void(0)" class="btn-rent">Rent Now</a>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="col">
+        <div class="product-card">
+          <img src="kurta1.jpg" alt="Kurta">
+          <h5>Stylish Kurta</h5>
+          <p>₹300/day</p>
+          <a href="javascript:void(0)" class="btn-rent">Rent Now</a>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="col">
+        <div class="product-card" >
+          <img src="blazer1.jpg" alt="Accessory">
+          <h5>Blazer</h5>
+          <p>₹300/day</p>
+          <a href="javascript:void(0)" class="btn-rent">Rent Now</a>
+        </div>
+      </div>
+      <!-- Product 5 -->
+      <div class="col">
+        <div class="product-card">
+          <img src="jacket1.jpg" alt="Jacket">
+          <h5>Winter Jacket</h5>
+          <p>₹250/day</p>
+          <a href="javascript:void(0)" class="btn-rent">Rent Now</a>
+        </div>
+      </div>
+      <!-- Product 6 -->
+      <div class="col">
+        <div class="product-card" >
+          <img src="dhoti1.jpg" alt="Saree" id="dhoti">
+          <h5>Traditional Dhoti</h5>
+          <p>₹150/day</p>
+          <a href="javascript:void(0)" class="btn-rent">Rent Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-white text-center ">
+      <p>&copy; 2025 RentEase | All Rights Reserved</p>
+      <p>Email us at: <a href="mailto:support@rentease.com" class="text-white">support@rentease.com</a></p>
+    </footer>
+
+</body>
+
+</html>
